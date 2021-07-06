@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 
 import { Background } from '../../components/Background';
+import { ButtonIcon } from '../../components/ButtonIcon';
 import { ListHeader } from '../../components/ListHeader';
 import { Header } from '../../components/Header';
 import { Member } from '../../components/Member';
@@ -80,6 +81,9 @@ export function AppointmentDetails() {
         ItemSeparatorComponent={() => <ListDivider />}
         style={styles.members}
       />
+      <View style={styles.footer}>
+        <ButtonIcon title="Entrar na partida"/>
+      </View>
     </Background>
   );
 }
